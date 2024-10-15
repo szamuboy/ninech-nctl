@@ -8,7 +8,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-        version = "1.2.4";
+        version = "1.7.7";
       in {
         packages.default = pkgs.buildGoModule {
           inherit version;
@@ -17,9 +17,9 @@
             owner = "ninech";
             repo = "nctl";
             rev = "v${version}";
-            sha256 = "sha256-58+qLtik0GgUGG1mkLHObcxGcg18roj69msS+AXfKDk=";
+            sha256 = "sha256-wwF11RUMVgJpDtXmgGa3ZQkyc10/mhSqkiPXb+t+B74=";
           };
-          vendorHash = "sha256-A2OAcgdPOdc6EWo/0KPbUCVIJ1Mi5CkYPWK76wB8L3U=";
+          vendorHash = "sha256-74EjwbxwlQH+6hCsMcpY/U2GrtIsIiL2TG/8EBuXE1c=";
         };
       });
 }
